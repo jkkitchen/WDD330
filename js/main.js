@@ -1,5 +1,5 @@
 import { loadHeaderFooter } from "./functions.mjs";
-import { loginUser } from "./auth.js";
+import { userLogin } from "./auth.js";
 
 //Call function to load headers and footers
 loadHeaderFooter();
@@ -19,8 +19,8 @@ document.querySelector("#login-submit").addEventListener("click", async (event) 
     const password = loginForm.password.value;
 
     try {
-        //enter email and password into function loginUser
-        await loginUser(email, password);
+        //enter email and password into function userLogin
+        await userLogin(email, password);
         //Redirect to user swimmer profiles page if login is successful
         window.location.href = "swimmer-profiles.html"
     } catch (err) {

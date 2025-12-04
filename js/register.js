@@ -1,8 +1,13 @@
+import { loadHeaderFooter } from "./functions.mjs";
 import { registerUser } from "./auth.js";
 
+//Call function to load headers and footers
+loadHeaderFooter();
+
+
 //Get form and message from register.html
-const registrationForm = document.querySelector('#registration-form');
-const registratioErrorMessage = document.querySelector('#registration-message');
+const registrationForm = document.querySelector('#registration');
+const registrationErrorMessage = document.querySelector('#registration-message');
 
 //Add event listener to submit button
 //must be async because it needs to "await" Firebase's asynchronous calls
@@ -20,6 +25,6 @@ document.querySelector("#registration-submit").addEventListener("click", async (
         window.location.href = "swimmer-profiles.html"
     } catch (err) {
         //Display error message if registration is not successful
-        registrationMessage.textContent = err.message;
+        registrationErrorMessage.textContent = err.message;
     }  
 });

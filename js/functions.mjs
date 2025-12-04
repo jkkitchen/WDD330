@@ -9,10 +9,10 @@ export async function loadTemplate(path) {
 
 //Function to create the header and footer for each webpage
 export function renderWithTemplate(template, parentElement, callback) {
-    //Check if there is a callback function (in this case cartSuperscript)
+    //Check if there is a callback function
     parentElement.innerHTML = template;
     if (callback) {
-        callback(); //the way the cartSuperscript function is set up we don't need data entered
+        callback(); 
     }
 }
 
