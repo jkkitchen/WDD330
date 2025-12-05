@@ -8,7 +8,6 @@ loadHeaderFooter();
 
 //Create a new instance of MockAPIData
 //API ENDPOINT FROM MOCKAPI:
-const usersAPIendpoint = `https://692f280e91e00bafccd6c5d3.mockapi.io/swim-cut-check/users`;
 const swimmersAPIendpoint = `https://692f280e91e00bafccd6c5d3.mockapi.io/swim-cut-check/swimmers`;
 
 //Datasource for SwimmerProfiles

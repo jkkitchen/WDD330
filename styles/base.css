@@ -64,9 +64,9 @@ h2 {
     color: white;
 }
 
-/*index.html, register.html */
+/*index.html, register.html, state-cuts.html */
 
-#login-form, #registration {
+#login-form, #registration, #state-dates-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +85,10 @@ label {
     font-size: 1rem;
 }
 
-input[type=email], input[type=password], input[type=text] {
+input[type=email], 
+input[type=password], 
+input[type=text], 
+input[type=date] {
     height: 40px;
     width: 200px;
     font-size: 1rem;
@@ -169,3 +172,5 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
 }
+
+/* state-cuts.html */
